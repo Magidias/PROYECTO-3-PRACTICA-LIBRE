@@ -67,19 +67,45 @@ a{
     color: inherit;
 }
 
+.boton{
+    background-color: var(--color0);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color2);
+    font-size: 1.2rem;
+    font-family: var(--color3);
+    color: var(--color2);
+    font-weight: 100;
+    letter-spacing: 3px;
+    cursor: pointer;
+    }
 
-/* NAV */
+.boton:hover{
+    background-color: var(--color2);
+    color: var(--color0);
+    transition: 0.5s;
+    border: 1px solid var(--color0);
+}
+
+.boton:active{
+    transform: scale(0.9);
+    transition: 1s;    
+}
+
+
+/*ESTILOS DEL NAVegador */
 
 nav{
     position: fixed;
     z-index: 100;
     top: 0;
-    padding-left: 35rem;
+    
 }
+
 nav .sup{
     background-color: var(--color0);
     width: 100%;
-    height: 9vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -90,7 +116,7 @@ nav .sup{
 nav .inf{
     background-color: var(--color0);
     width: 100%;
-    height: 3vh;
+    height: 7vh;
     max-height: 70px;
     display: flex;
     flex-direction: row;
@@ -99,11 +125,10 @@ nav .inf{
 }
 
 nav .sup img{
-    width: 220px;
+    width:100px;
     position: absolute;
     left: 1rem;
-    top: 0.5rem;
-    
+    top: 0.5rem; 
 }
 
 nav .inf ul{
@@ -133,7 +158,7 @@ nav .inf a:hover{
 /* ESTILOS DEL HEADER */
 
 header{
-    margin-top: 90px;
+    margin-top: 100px;
     height: 95vh;
     background-image: url("../img/Buceo\ Donosti.jpg");
     background-size: cover;
@@ -142,9 +167,9 @@ header{
 }
 
 header .contenedor{
-    margin-top: 5vh;
+    margin-top: 20vh;
     margin-left: 2rem;
-    width: 700px;
+    width: 2000px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -156,22 +181,33 @@ header .contenedor{
 }
 
 header .contenedor :nth-child(1){
-    font-size: 5.2vw;
+    font-size: 7vw;
     line-height: 5vw;
 }
 header .contenedor :nth-child(2){
-    font-size: 3.4vw;
-    line-height: 3vw;
+    font-size: 3.2vw;
+    line-height: 4vw;
 }
 header .contenedor :nth-child(3){
-    font-size: 8.2vw;
+    font-size: 5.5vw;
     line-height: 8vw;
 }
 header .contenedor :nth-child(4){
     font-size: 2.9vw;
-    line-height: 2.3vw;
+    line-height: 3.3vw;
 }
 header .contenedor :nth-child(5){
-    font-size: 5.3vw;
+    font-size: 6.3vw;
     line-height: 5vw;
+}
+
+/* CAJAS PRINCIPALES */
+
+nav, header, main, footer{
+    width: 100%;
+    max-width: 2560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
 }
