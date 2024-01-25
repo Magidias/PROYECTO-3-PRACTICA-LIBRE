@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* VARIABLES Y CARGAS DE FUENTES */
 
 @font-face {
@@ -28,6 +29,7 @@
     
     font-family: var(--fuente2);
 }
+
 
 /* Estilos Web */
 
@@ -201,6 +203,7 @@ header .contenedor :nth-child(5){
     line-height: 5vw;
 }
 
+
 /* CAJAS PRINCIPALES */
 
 nav, header, main, footer{
@@ -324,6 +327,7 @@ article{
     transform: rotate(40deg);
     transition: 1s;
 }  
+
     
 /*  ESTILOS DE FOOTER */
 
@@ -436,6 +440,7 @@ footer{
 
 
 /* ESTILOS DEL FORMULARIO */
+
 #contenedor_form{
     width: 100%;
     max-width: 2560px;
